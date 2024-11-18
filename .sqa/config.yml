@@ -1,0 +1,56 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/cyfronet-fid/marketplace:
+      branch: master
+      repo: https://github.com/cyfronet-fid/marketplace.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/cyfronet-fid/marketplace git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-salmon-hippopotamus.sh
+        container: qc.acc_gloppy-cerulean-zorse
+  QC.Doc:
+    repos:
+      github.com/cyfronet-fid/marketplace find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.geeky-asparagus-cow.sh
+        container: qc.doc_whiny-bronze-badger
+      github.com/cyfronet-fid/marketplace git:
+        commands:
+        - /usr/bin/env sh .sqa/script.leaky-bistre-zorse.sh
+        container: qc.doc_woozy-mustard-caracal
+      github.com/cyfronet-fid/marketplace markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lousy-cyan-whale.sh
+        container: qc.doc_goopy-gamboge-mau
+  QC.Lic:
+    repos:
+      github.com/cyfronet-fid/marketplace licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.nippy-indigo-elephant.sh
+        container: qc.lic_jumpy-puce-orangutan
+  QC.Sty:
+    repos:
+      github.com/cyfronet-fid/marketplace jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.smelly-zucchini-tuatara.sh
+        container: qc.sty_bluesy-razzmatazz-magpie
+      github.com/cyfronet-fid/marketplace rubocop:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-copper-tiger.sh
+        container: qc.sty_tasty-grey-discus
+  QC.Ver:
+    repos:
+      github.com/cyfronet-fid/marketplace get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-auburn-lizard.sh
+        container: qc.ver_fuzzy-purple-seahorse
+timeout: 5400

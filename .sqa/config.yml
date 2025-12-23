@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/marketplace git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-rose-gopher.sh
-        container: qc.acc_blurry-firebrick-lizard
+        - /usr/bin/env sh .sqa/script.stuffy-sepia-capybara.sh
+        container: qc.acc_cozy-ochre-kakapo
   QC.Doc:
     repos:
       github.com/cyfronet-fid/marketplace find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-myrtle-eel.sh
-        container: qc.doc_beady-cardinal-toucan
+        - /usr/bin/env sh .sqa/script.sunny-malachite-forest.sh
+        container: qc.doc_flabby-vermilion-hyena
       github.com/cyfronet-fid/marketplace git:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-mustard-mandrill.sh
-        container: qc.doc_bumpy-emerald-sparrow
+        - /usr/bin/env sh .sqa/script.grumpy-vermilion-weasel.sh
+        container: qc.doc_snazzy-russet-macaque
       github.com/cyfronet-fid/marketplace markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-pear-donkey.sh
-        container: qc.doc_zippy-malachite-blue
+        - /usr/bin/env sh .sqa/script.gamy-aquamarine-neanderthal.sh
+        container: qc.doc_pokey-brass-oriole
   QC.Lic:
     repos:
       github.com/cyfronet-fid/marketplace licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-maroon-kiwi.sh
-        container: qc.lic_skinny-champagne-seahorse
+        - /usr/bin/env sh .sqa/script.zippy-indigo-kakapo.sh
+        container: qc.lic_smelly-chocolate-monkey
   QC.Met:
     repos:
       github.com/cyfronet-fid/marketplace cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-chocolate-caracal.sh
-        container: qc.met_gamy-asparagus-axolotl
+        - /usr/bin/env sh .sqa/script.chummy-tangerine-tang.sh
+        container: qc.met_gloppy-cyan-tortoise
   QC.Sty:
     repos:
       github.com/cyfronet-fid/marketplace hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-fuchsia-bongo.sh
-        container: qc.sty_greasy-myrtle-burmese
+        - /usr/bin/env sh .sqa/script.lousy-auburn-tzu.sh
+        container: qc.sty_skimpy-crimson-argentino
       github.com/cyfronet-fid/marketplace jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-black-booby.sh
-        container: qc.sty_queasy-tangerine-fish
+        - /usr/bin/env sh .sqa/script.lovely-green-schnauzer.sh
+        container: qc.sty_breezy-carmine-coyote
       github.com/cyfronet-fid/marketplace rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-eggplant-tiger.sh
-        container: qc.sty_wheezy-purple-quetzal
+        - /usr/bin/env sh .sqa/script.bluesy-salmon-yak.sh
+        container: qc.sty_shaky-firebrick-owl
   QC.Ver:
     repos:
       github.com/cyfronet-fid/marketplace get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-charcoal-iguana.sh
-        container: qc.ver_flabby-thistle-ostrich
+        - /usr/bin/env sh .sqa/script.squirrely-seashell-starfish.sh
+        container: qc.ver_pokey-violet-foxhound
 timeout: 5400

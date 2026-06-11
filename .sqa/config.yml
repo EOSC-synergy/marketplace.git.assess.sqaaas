@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/cyfronet-fid/marketplace:
       branch: development
@@ -15,52 +15,52 @@ sqa_criteria:
     repos:
       github.com/cyfronet-fid/marketplace git:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-charcoal-hamster.sh
-        container: qc.acc_crabby-green-shrimp
+        - /usr/bin/env sh .sqa/script.viridian_patient_clownfish.sh
+        container: qc.acc_amethyst_artistic_flamingo
   QC.Doc:
     repos:
       github.com/cyfronet-fid/marketplace find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-chocolate-cattle.sh
-        container: qc.doc_fuzzy-seashell-dodo
+        - /usr/bin/env sh .sqa/script.cardamom_dreamy_otter.sh
+        container: qc.doc_espresso_skeptical_hedgehog
       github.com/cyfronet-fid/marketplace git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-celadon-alligator.sh
-        container: qc.doc_flimsy-cardinal-ferret
+        - /usr/bin/env sh .sqa/script.cerise_impulsive_cougar.sh
+        container: qc.doc_thistle_courageous_hornbill
       github.com/cyfronet-fid/marketplace markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-salmon-dormouse.sh
-        container: qc.doc_scanty-harlequin-mole
+        - /usr/bin/env sh .sqa/script.sage_zany_badger.sh
+        container: qc.doc_paprika_apathetic_salamander
   QC.Lic:
     repos:
       github.com/cyfronet-fid/marketplace licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-azure-mongoose.sh
-        container: qc.lic_freaky-crimson-gerbil
+        - /usr/bin/env sh .sqa/script.red_diligent_gull.sh
+        container: qc.lic_storm_eccentric_griffin
   QC.Met:
     repos:
       github.com/cyfronet-fid/marketplace cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-magenta-zorse.sh
-        container: qc.met_silly-ecru-husky
+        - /usr/bin/env sh .sqa/script.kiwi_persistent_jackal.sh
+        container: qc.met_rust_gracious_dhole
   QC.Sty:
     repos:
       github.com/cyfronet-fid/marketplace hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-gold-tuatara.sh
-        container: qc.sty_wimpy-cyan-wombat
+        - /usr/bin/env sh .sqa/script.peach_amiable_hamster.sh
+        container: qc.sty_prussian_rustic_okapi
       github.com/cyfronet-fid/marketplace jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-charcoal-albatross.sh
-        container: qc.sty_tacky-scarlet-cougar
+        - /usr/bin/env sh .sqa/script.marina_vigilant_stingray.sh
+        container: qc.sty_butter_relaxed_alpaca
       github.com/cyfronet-fid/marketplace rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-charcoal-rabbit.sh
-        container: qc.sty_frumpy-aquamarine-tortoise
+        - /usr/bin/env sh .sqa/script.thistle_hopeful_moth.sh
+        container: qc.sty_cayenne_thoughtful_phoenix
   QC.Ver:
     repos:
       github.com/cyfronet-fid/marketplace get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-malachite-antelope.sh
-        container: qc.ver_scaly-scarlet-okapi
+        - /usr/bin/env sh .sqa/script.blush_passionate_impala.sh
+        container: qc.ver_marigold_warm_antelope
 timeout: 5400
